@@ -44,7 +44,9 @@ Projeyi çalıştırmak için bilgisayarınızda .NET SDK yüklü olmalıdır.
 
 ## Ekran Görüntüleri
 
-![Ana Sayfa](assets/anasayfa.png)
-![Admin Paneli](assets/admin_paneli.png)
-![Kitap Ekleme Paneli](assets/Kitap_ekleme.png)
-![Kategori Ekleme Paneli](assets/Kategori_ekleme.png)
+### Proje Ekran Görüntüleri
+
+![Anasayfa](assets/Anasayfa.png)
+![Admin Paneli](assets/Admin_paneli.png)
+![Kategori Ekleme](assets/Kategori_ekleme.png)
+![Kitap Ekleme](assets/Kitap_ekleme.png)
