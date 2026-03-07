@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/25818578/README.md)
+
 # KitapÇarşısı
 
 KitapÇarşısı, ASP.NET Core MVC mimarisi kullanılarak geliştirilmiş bir kitap yönetim ve listeleme uygulamasıdır. Kullanıcılar kitapları inceleyebilir, arayabilir ve admin paneli üzerinden kitap/kategori yönetimi yapabilirler.
