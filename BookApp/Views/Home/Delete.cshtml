@@ -1,0 +1,31 @@
+@model ProductBook
+
+<h1>Kitap Sil</h1>
+<h3>Bu kitabı silmek istediğinize emin misiniz?</h3>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <img src="@Model.Image" class="img-fluid" alt="@Model.BookName" style="max-width: 200px;">
+    </div>
+    <div class="col-md-8">
+        <dl class="row">
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.BookId)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.BookId)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.BookName)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.BookName)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.PageCount)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.PageCount)</dd>
+            
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CategoryId)</dt>
+            <dd class="col-sm-9">@Model.CategoryId</dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="BookId" />
+            <input type="submit" value="Sil" class="btn btn-danger" />
+            <a asp-action="Admin" class="btn btn-secondary">İptal</a>
+        </form>
+    </div>
+</div>

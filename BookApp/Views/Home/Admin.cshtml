@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ProductBook>
+
+<div class="my-3">
+    <a href="/Home/Create" class="btn btn-primary">Yeni Kitap Ekle</a>
+    <a href="/Home/CreateCategory" class="btn btn-success">Yeni Kategori Ekle</a>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th style="width: 150px;">@Html.DisplayNameFor(model => model.FirstOrDefault()!.BookId)</th>
+            <th style="width: 150px;">@Html.DisplayNameFor(model => model.FirstOrDefault()!.BookName)</th>
+            <th style="width: 150px;">@Html.DisplayNameFor(model => model.FirstOrDefault()!.Image)</th>
+            <th style="width: 150px;">@Html.DisplayNameFor(model => model.FirstOrDefault()!.IsActive)</th>
+            <th style="width: 150px;">Setting</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.BookId</td>
+                <td>@book.BookName</td>
+                <td><img src="@book.Image" class="img-fluid" alt="" style="width: 75px; height: auto;"></td>
+                <td>
+                    @if(book.IsActive)
+                    {
+                        <span class="badge bg-success">Aktif</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Pasif</span>
+                    }
+                </td>
+                <td>
+                    <a href="/Home/Edit/@book.BookId" class="btn btn-warning">Edit</a>
+                    <a href="/Home/Delete/@book.BookId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

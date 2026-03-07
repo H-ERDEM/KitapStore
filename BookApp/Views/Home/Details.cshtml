@@ -1,0 +1,22 @@
+@model ProductBook
+
+<div class="row my-4">
+    <div class="col-md-3">
+        <img src="@Model.Image" class="img-fluid rounded" alt="@Model.BookName">
+    </div>
+    <div class="col-md-9">
+        <div class="card">
+            <div class="card-header">
+                @Model.BookName
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@Model.BookName</h5>
+                <p class="card-text">@Model.Description</p>
+                <p class="card-text"><strong>Sayfa Sayısı:</strong> @Model.PageCount</p>
+                <p class="card-text"><strong>Fiyat:</strong> @(Model.Price.HasValue ? Model.Price + " TL" : "Belirtilmedi")</p>
+                <p class="card-text"><small class="text-muted">Kategori ID: @Model.CategoryId</small></p>
+                <a asp-action="Index" class="btn btn-primary">Listeye Dön</a>
+            </div>
+        </div>
+    </div>
+</div>
