@@ -69,9 +69,6 @@ Make sure you have .NET SDK installed.
 1. Navigate to project folder:
    ```bash
    cd BookApp
-
-
-
    
 ## Notlar
 
