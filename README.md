@@ -36,7 +36,43 @@ Projeyi çalıştırmak için bilgisayarınızda .NET SDK yüklü olmalıdır.
    ```bash
    dotnet watch run
    ```
+---
 
+# 📚 BookBazaar
+
+BookBazaar is a book management and listing application developed using the ASP.NET Core MVC architecture. Users can browse, search books and manage books/categories via the admin panel.
+
+## Features
+
+- **Homepage:** Listing active books.
+- **Search & Filtering:** Search by book name and filter by categories.
+- **Detail View:** Displays price, page count, and summary information.
+- **Admin Panel:**
+  - Add Book (with image upload)
+  - Edit Book
+  - Delete Book
+  - Add Category
+  - Active/Passive status management
+
+## Technologies
+
+- **Platform:** .NET Core
+- **Language:** C#
+- **Web Framework:** ASP.NET Core MVC
+- **Data Management:** In-Memory Repository Pattern (Static lists)
+- **UI:** Bootstrap 5
+
+## Installation
+
+Make sure you have .NET SDK installed.
+
+1. Navigate to project folder:
+   ```bash
+   cd BookApp
+
+
+
+   
 ## Notlar
 
 - Veri tabanı kullanılmamıştır, veriler uygulama çalıştığı sürece bellekte tutulur. Uygulama yeniden başlatıldığında veriler sıfırlanır.
